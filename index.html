@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshith N | Cybersecurity Engineer & Ethical Hacker</title>
+    <meta name="description" content="Portfolio of Harshith N — Cybersecurity Engineer specializing in Penetration Testing, Ethical Hacking, and Network Security. Top 10 globally ranked on HackTheBox.">
+    <meta name="keywords" content="Cybersecurity, Ethical Hacking, Penetration Testing, Portfolio, Harshith N">
+    <meta name="author" content="Harshith N">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Cursor glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Harshith</span>
+                <span class="logo-slash"> /</span>
+                <span class="logo-bracket">&gt;</span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+                <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+                <a href="#certifications" class="nav-link" data-text="Certs">Certs</a>
+                <a href="#education" class="nav-link" data-text="Education">Education</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">harshith@kali:~</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line"><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+                    <p class="terminal-output" id="typed-name"></p>
+                    <p class="terminal-line delay-1"><span class="prompt">$</span> <span class="cmd">cat role.txt</span></p>
+                    <p class="terminal-output delay-2" id="typed-role"></p>
+                    <p class="terminal-line delay-3"><span class="prompt">$</span> <span class="cmd">echo $LOCATION</span></p>
+                    <p class="terminal-output delay-4">Bengaluru, India</p>
+                    <p class="terminal-line delay-5"><span class="prompt">$</span> <span class="cursor-blink">_</span></p>
+                </div>
+            </div>
+            <div class="hero-info">
+                <div class="glitch-wrapper">
+                    <h1 class="hero-name glitch" data-text="Harshith N">Harshith N</h1>
+                </div>
+                <p class="hero-tagline">
+                    <span class="tag">Cybersecurity Engineer</span>
+                    <span class="tag-divider">·</span>
+                    <span class="tag">Ethical Hacking</span>
+                    <span class="tag-divider">·</span>
+                    <span class="tag">Penetration Testing</span>
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-label">Top India Rank</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-label">Top Global Rank</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span class="btn-icon">⚡</span> Get in Touch
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <span class="btn-icon">🔍</span> View Work
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-tag">&lt;</span>
+                About Me
+                <span class="section-tag">/&gt;</span>
+            </h2>
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="about-icon">🛡️</div>
+                    <p class="about-text">
+                        Results-driven cybersecurity professional with hands-on expertise in 
+                        <strong>penetration testing</strong>, <strong>vulnerability assessment</strong>, 
+                        and <strong>network security</strong>. Proven track record in competitive hacking 
+                        environments, achieving <strong>Top 10 rankings both nationally and globally</strong>.
+                    </p>
+                    <p class="about-text">
+                        Passionate about breaking systems to understand them deeply — and rebuilding them stronger. 
+                        Currently pursuing a <strong>B.E. in ECE</strong> while staying ahead of the threat landscape.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card glass-card" data-delay="0">
+                        <div class="highlight-icon">🏆</div>
+                        <h3>Top 10 Globally</h3>
+                        <p>Ranked on HackTheBox</p>
+                    </div>
+                    <div class="highlight-card glass-card" data-delay="1">
+                        <div class="highlight-icon">🇮🇳</div>
+                        <h3>Top 10 India</h3>
+                        <p>Ranked on PantilIdaam</p>
+                    </div>
+                    <div class="highlight-card glass-card" data-delay="2">
+                        <div class="highlight-icon">💀</div>
+                        <h3>Hacker Rank</h3>
+                        <p>Achieved on HackTheBox</p>
+                    </div>
+                    <div class="highlight-card glass-card" data-delay="3">
+                        <div class="highlight-icon">🔬</div>
+                        <h3>Home Lab</h3>
+                        <p>Virtualized Cyber Lab</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-tag">&lt;</span>
+                Skills
+                <span class="section-tag">/&gt;</span>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category glass-card" data-delay="0">
+                    <div class="skill-header">
+                        <span class="skill-icon">🔐</span>
+                        <h3>Security</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pen Testing</span>
+                        <span class="skill-tag">Vulnerability Assessment</span>
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">Ethical Hacking</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card" data-delay="1">
+                    <div class="skill-header">
+                        <span class="skill-icon">🌐</span>
+                        <h3>Networking</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TCP/IP</span>
+                        <span class="skill-tag">IP Networking</span>
+                        <span class="skill-tag">Protocol Analysis</span>
+                        <span class="skill-tag">Network Monitoring</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card" data-delay="2">
+                    <div class="skill-header">
+                        <span class="skill-icon">🛠️</span>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Burp Suite</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="92"></div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card" data-delay="3">
+                    <div class="skill-header">
+                        <span class="skill-icon">💻</span>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Automation</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card" data-delay="4">
+                    <div class="skill-header">
+                        <span class="skill-icon">🔧</span>
+                        <h3>Other</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Postman / API Testing</span>
+                        <span class="skill-tag">System Debugging</span>
+                        <span class="skill-tag">Security Research</span>
+                        <span class="skill-tag">CTF</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-tag">&lt;</span>
+                Projects & Experience
+                <span class="section-tag">/&gt;</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-status ongoing">
+                        <span class="status-dot"></span> Ongoing
+                    </div>
+                    <div class="project-icon-wrap">
+                        <div class="project-icon">🏠</div>
+                    </div>
+                    <h3 class="project-title">Home Cybersecurity Lab</h3>
+                    <p class="project-subtitle">Independent Research Project</p>
+                    <ul class="project-details">
+                        <li>Designed and deployed a <strong>headless virtualized lab</strong> for controlled attack simulations, vulnerability scanning, and real-time network monitoring.</li>
+                        <li>Replicated <strong>real-world attack scenarios</strong> with industry-standard tools to sharpen both offensive and defensive skills.</li>
+                        <li>Used the lab as a launchpad for <strong>CTF prep</strong> — turning theory into repeatable, documented exploits.</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Virtualization</span>
+                        <span>Kali Linux</span>
+                        <span>Nmap</span>
+                        <span>Metasploit</span>
+                        <span>Wireshark</span>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-status active">
+                        <span class="status-dot"></span> 2023 – Present
+                    </div>
+                    <div class="project-icon-wrap">
+                        <div class="project-icon">🏴</div>
+                    </div>
+                    <h3 class="project-title">CTF Competition Achievements</h3>
+                    <p class="project-subtitle">PantilIdaam · HackTheBox</p>
+                    <ul class="project-details">
+                        <li><strong>Top 10 in India</strong> on PantilIdaam across web exploitation, binary analysis, and reverse engineering categories.</li>
+                        <li><strong>Top 10 globally</strong> on HackTheBox — demonstrating advanced skills in privilege escalation, exploit development, and enumeration.</li>
+                        <li>Achieved <strong>'Hacker' rank</strong> on HackTheBox, reflecting consistent, high-quality practical exploitation performance.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://online.pwntilldawn.com/Achievements/10014" target="_blank" rel="noopener" class="verify-link">🏆 Pwntilldawn Profile ↗</a>
+                        <a href="https://profile.hackthebox.com/profile/019cc956-37a0-7308-90ff-6b5c73c7cb8b" target="_blank" rel="noopener" class="verify-link">💀 HackTheBox Profile ↗</a>
+                    </div>
+                    <div class="project-tech">
+                        <span>Web Exploitation</span>
+                        <span>Binary Analysis</span>
+                        <span>Reverse Engineering</span>
+                        <span>Privilege Escalation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-tag">&lt;</span>
+                Certifications
+                <span class="section-tag">/&gt;</span>
+            </h2>
+            <div class="certs-grid">
+                <div class="cert-card glass-card" data-delay="0">
+                    <div class="cert-badge" style="--badge-color: #e74c3c;">CEH</div>
+                    <div class="cert-info">
+                        <h3>Certified Ethical Hacker</h3>
+                        <p>EC-Council</p>
+                    </div>
+                    <a href="https://www.credly.com/badges/0b7c421c-aa3e-40e5-9934-d5e9ee7cee20" target="_blank" rel="noopener" class="verify-link">Verify ↗</a>
+                </div>
+                <div class="cert-card glass-card" data-delay="1">
+                    <div class="cert-badge" style="--badge-color: #e67e22;">NSE 2</div>
+                    <div class="cert-info">
+                        <h3>Fortinet Network Security Expert Level 2</h3>
+                        <p>Fortinet</p>
+                    </div>
+                    <a href="https://www.credly.com/earner/earned/badge/c3e4b7b7-0ea8-4a24-bed6-e47cae5a34ba" target="_blank" rel="noopener" class="verify-link">Verify ↗</a>
+                </div>
+                <div class="cert-card glass-card" data-delay="2">
+                    <div class="cert-badge" style="--badge-color: #e74c3c;">FGT</div>
+                    <div class="cert-info">
+                        <h3>FortiGate 7.6 Operator</h3>
+                        <p>Fortinet</p>
+                    </div>
+                </div>
+                <div class="cert-card glass-card" data-delay="3">
+                    <div class="cert-badge" style="--badge-color: #f39c12;">API</div>
+                    <div class="cert-info">
+                        <h3>Postman API Fundamentals Student Expert</h3>
+                        <p>Postman</p>
+                    </div>
+                    <a href="https://badges.parchment.com/public/assertions/Cf0EfHOUToe_IOjUCO4z7w?identity__email=harshith3056@gmail.com" target="_blank" rel="noopener" class="verify-link">Verify ↗</a>
+                </div>
+                <div class="cert-card glass-card" data-delay="4">
+                    <div class="cert-badge" style="--badge-color: #f39c12;">AWS</div>
+                    <div class="cert-info">
+                        <h3>AWS Advanced Networking Specialty – Domain 1 (ANS-C01)</h3>
+                        <p>Amazon Web Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-tag">&lt;</span>
+                Education
+                <span class="section-tag">/&gt;</span>
+            </h2>
+            <div class="education-timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 – 2028</div>
+                    <h3>Vemana Institute of Technology</h3>
+                    <p class="edu-degree">B.E. Electronics and Communication Engineering</p>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021</div>
+                    <h3>AMC PU College</h3>
+                    <p class="edu-degree">12th Standard — Physics, Chemistry, Mathematics (PCM)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-tag">&lt;</span>
+                Contact
+                <span class="section-tag">/&gt;</span>
+            </h2>
+            <div class="contact-grid">
+                <div class="contact-terminal glass-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">contact.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="terminal-line"><span class="prompt">#</span> <span class="comment">Let's connect and build something secure</span></p>
+                        <p class="terminal-line"><span class="prompt">$</span> <span class="cmd">echo $EMAIL</span></p>
+                        <p class="terminal-output"><a href="mailto:harshith3056@gmail.com">harshith3056@gmail.com</a></p>
+                        <p class="terminal-line"><span class="prompt">$</span> <span class="cmd">echo $LINKEDIN</span></p>
+                        <p class="terminal-output"><a href="https://linkedin.com/in/harshith-n-b77209307" target="_blank" rel="noopener">linkedin.com/in/harshith-n-b77209307</a></p>
+                        <p class="terminal-line"><span class="prompt">$</span> <span class="cmd">echo $LOCATION</span></p>
+                        <p class="terminal-output">📍 Bengaluru, India</p>
+                        <p class="terminal-line"><span class="prompt">$</span> <span class="cursor-blink">_</span></p>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:harshith3056@gmail.com" class="contact-link-card glass-card" id="contact-email">
+                        <div class="contact-link-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>harshith3056@gmail.com</p>
+                        </div>
+                        <span class="arrow">→</span>
+                    </a>
+                    <a href="https://linkedin.com/in/harshith-n-b77209307" target="_blank" rel="noopener" class="contact-link-card glass-card" id="contact-linkedin">
+                        <div class="contact-link-icon">💼</div>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Harshith N</p>
+                        </div>
+                        <span class="arrow">→</span>
+                    </a>
+                    <a href="https://discord.gg/VYQjqYH7" target="_blank" rel="noopener" class="contact-link-card glass-card" id="contact-discord">
+                        <div class="contact-link-icon">🎮</div>
+                        <div>
+                            <h3>Discord</h3>
+                            <p>Join Server</p>
+                        </div>
+                        <span class="arrow">→</span>
+                    </a>
+                    <div class="contact-link-card glass-card" id="contact-location">
+                        <div class="contact-link-icon">📍</div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Bengaluru, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    <span class="footer-code">&lt;/&gt;</span> 
+                    Built by <strong>Harshith N</strong> · 2026
+                </p>
+                <p class="footer-quote">"Break it. Understand it. Rebuild it stronger."</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
