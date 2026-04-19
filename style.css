@@ -171,6 +171,35 @@ strong { color: var(--accent); font-weight: 600; }
 /* Hero Info */
 .hero-info { display: flex; flex-direction: column; gap: 24px; }
 
+/* Profile Photo */
+.profile-photo-wrapper {
+    position: relative; width: 160px; height: 160px;
+}
+.profile-photo {
+    width: 160px; height: 160px; border-radius: 50%; object-fit: cover;
+    border: 3px solid transparent; position: relative; z-index: 2;
+    background-clip: padding-box;
+    box-shadow: 0 0 30px rgba(0,255,136,0.2), 0 0 60px rgba(0,255,136,0.1);
+    transition: var(--transition);
+}
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0,255,136,0.35), 0 0 80px rgba(0,255,136,0.15);
+}
+.profile-photo-glow {
+    position: absolute; inset: -4px; border-radius: 50%; z-index: 1;
+    background: conic-gradient(var(--accent), var(--accent-2), var(--accent-3), var(--accent), var(--accent-2));
+    animation: rotateGlow 4s linear infinite;
+}
+.profile-photo-glow::after {
+    content: ''; position: absolute; inset: 3px; border-radius: 50%;
+    background: var(--bg-primary);
+}
+@keyframes rotateGlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
 .glitch-wrapper { position: relative; }
 .hero-name {
     font-family: var(--font-display); font-size: 4rem; font-weight: 900;
@@ -418,6 +447,7 @@ strong { color: var(--accent); font-weight: 600; }
     .hero-stats { justify-content: center; }
     .hero-cta { justify-content: center; }
     .hero-name { font-size: 3rem; }
+    .profile-photo-wrapper { margin: 0 auto; }
     .about-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
