@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshith N | Cybersecurity Engineer & Ethical Hacker</title>
-    <meta name="description" content="Portfolio of Harshith N — Cybersecurity Engineer specializing in Penetration Testing, Ethical Hacking, and Network Security. Top 10 globally ranked on HackTheBox.">
+    <title>Harshith N | B.E. ECE Student · Ethical Hacking · Penetration Testing</title>
+    <meta name="description" content="Portfolio of Harshith N — B.E. ECE Student specializing in Penetration Testing, Ethical Hacking, and Network Security. Top 10 globally ranked on HackTheBox.">
     <meta name="keywords" content="Cybersecurity, Ethical Hacking, Penetration Testing, Portfolio, Harshith N">
     <meta name="author" content="Harshith N">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Harshith N | B.E. ECE Student · Ethical Hacking · Penetration Testing">
+    <meta property="og:description" content="Portfolio of Harshith N — Penetration Testing, Ethical Hacking, and Network Security. Top 10 on HackTheBox and PwnTillDawn.">
+    <meta property="og:image" content="profile.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Harshith N | B.E. ECE Student · Ethical Hacking · Penetration Testing">
+    <meta name="twitter:description" content="B.E. ECE Student — Pentesting, ethical hacking, CTF. Bengaluru, India.">
+    <meta name="twitter:image" content="profile.png">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <!-- Matrix Rain Canvas -->
     <canvas id="matrix-canvas"></canvas>
 
@@ -42,6 +52,7 @@
         </div>
     </nav>
 
+    <main id="main">
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
@@ -73,20 +84,21 @@
                     <h1 class="hero-name glitch" data-text="Harshith N">Harshith N</h1>
                 </div>
                 <p class="hero-tagline">
-                    <span class="tag">Cybersecurity Engineer</span>
+                    <span class="tag">B.E. ECE Student</span>
                     <span class="tag-divider">·</span>
                     <span class="tag">Ethical Hacking</span>
                     <span class="tag-divider">·</span>
                     <span class="tag">Penetration Testing</span>
                 </p>
+                <p class="hero-rotating" id="hero-rotating" aria-live="polite"></p>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number" data-target="10">0</span>
-                        <span class="stat-label">Top India Rank</span>
+                        <span class="stat-label">Top India (PwnTillDawn)</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number" data-target="10">0</span>
-                        <span class="stat-label">Top Global Rank</span>
+                        <span class="stat-label">Top Global (HackTheBox)</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number" data-target="5">0</span>
@@ -101,11 +113,32 @@
                         <span class="btn-icon">🔍</span> View Work
                     </a>
                 </div>
+                <div class="hero-cta hero-cta-secondary">
+                    <a href="https://github.com/harshith3056" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+                        <span class="btn-icon" aria-hidden="true">&lt;/&gt;</span> GitHub
+                    </a>
+                    <a href="resume.pdf" class="btn btn-ghost" download>
+                        <span class="btn-icon">📄</span> Résumé
+                    </a>
+                </div>
             </div>
         </div>
         <div class="scroll-indicator">
             <div class="scroll-line"></div>
             <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <section class="platforms-strip" aria-label="Profiles and platforms">
+        <div class="container platforms-inner">
+            <span class="platforms-label">Also on</span>
+            <div class="platforms-links">
+                <a href="https://profile.hackthebox.com/profile/019cc956-37a0-7308-90ff-6b5c73c7cb8b" target="_blank" rel="noopener noreferrer" class="platform-link">HackTheBox</a>
+                <span class="platform-dot" aria-hidden="true"></span>
+                <a href="https://online.pwntilldawn.com/Achievements/10014" target="_blank" rel="noopener noreferrer" class="platform-link">PwnTillDawn</a>
+                <span class="platform-dot" aria-hidden="true"></span>
+                <a href="https://www.credly.com/badges/0b7c421c-aa3e-40e5-9934-d5e9ee7cee20" target="_blank" rel="noopener noreferrer" class="platform-link">Credly</a>
+            </div>
         </div>
     </section>
 
@@ -140,7 +173,7 @@
                     <div class="highlight-card glass-card" data-delay="1">
                         <div class="highlight-icon">🇮🇳</div>
                         <h3>Top 10 India</h3>
-                        <p>Ranked on PantilIdaam</p>
+                        <p>Ranked on PwnTillDawn</p>
                     </div>
                     <div class="highlight-card glass-card" data-delay="2">
                         <div class="highlight-icon">💀</div>
@@ -284,14 +317,14 @@
                         <div class="project-icon">🏴</div>
                     </div>
                     <h3 class="project-title">CTF Competition Achievements</h3>
-                    <p class="project-subtitle">PantilIdaam · HackTheBox</p>
+                    <p class="project-subtitle">PwnTillDawn · HackTheBox</p>
                     <ul class="project-details">
-                        <li><strong>Top 10 in India</strong> on PantilIdaam across web exploitation, binary analysis, and reverse engineering categories.</li>
+                        <li><strong>Top 10 in India</strong> on PwnTillDawn across web exploitation, binary analysis, and reverse engineering categories.</li>
                         <li><strong>Top 10 globally</strong> on HackTheBox — demonstrating advanced skills in privilege escalation, exploit development, and enumeration.</li>
                         <li>Achieved <strong>'Hacker' rank</strong> on HackTheBox, reflecting consistent, high-quality practical exploitation performance.</li>
                     </ul>
                     <div class="project-links">
-                        <a href="https://online.pwntilldawn.com/Achievements/10014" target="_blank" rel="noopener" class="verify-link">🏆 Pwntilldawn Profile ↗</a>
+                        <a href="https://online.pwntilldawn.com/Achievements/10014" target="_blank" rel="noopener" class="verify-link">🏆 PwnTillDawn profile ↗</a>
                         <a href="https://profile.hackthebox.com/profile/019cc956-37a0-7308-90ff-6b5c73c7cb8b" target="_blank" rel="noopener" class="verify-link">💀 HackTheBox Profile ↗</a>
                     </div>
                     <div class="project-tech">
@@ -299,6 +332,29 @@
                         <span>Binary Analysis</span>
                         <span>Reverse Engineering</span>
                         <span>Privilege Escalation</span>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-status ongoing">
+                        <span class="status-dot"></span> Ongoing
+                    </div>
+                    <div class="project-icon-wrap">
+                        <div class="project-icon">🪐</div>
+                    </div>
+                    <h3 class="project-title">JupiterOS</h3>
+                    <p class="project-subtitle">A 32-bit operating system built from scratch in C and NASM assembly</p>
+                    <ul class="project-details">
+                        <li>Multiboot-compliant bootloader (GRUB compatible) + <strong>protected-mode kernel</strong> in C99 &amp; NASM.</li>
+                        <li>Full keyboard driver, interactive shell with <strong>command history &amp; auto-complete</strong>, advanced text UI.</li>
+                        <li>RAM-based filesystem (create/read/delete/list), <strong>memory allocator</strong>, process scheduler, system timer.</li>
+                        <li>IDT/PIC/ISR interrupt infrastructure; actively building <strong>preemptive multitasking</strong>, FAT12 storage, syscalls, and basic GUI.</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>NASM</span>
+                        <span>C99</span>
+                        <span>GCC</span>
+                        <span>QEMU</span>
+                        <span>GNU Make</span>
                     </div>
                 </div>
             </div>
@@ -370,12 +426,21 @@
                     <div class="timeline-date">2024 – 2028</div>
                     <h3>Vemana Institute of Technology</h3>
                     <p class="edu-degree">B.E. Electronics and Communication Engineering</p>
+                    <p class="edu-score">1st Sem GPA: 6.5 | 2nd Sem GPA: 7.0 | 3rd Sem GPA: 7.0</p>
                 </div>
                 <div class="timeline-item glass-card">
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2021</div>
                     <h3>AMC PU College</h3>
                     <p class="edu-degree">12th Standard — Physics, Chemistry, Mathematics (PCM)</p>
+                    <p class="edu-score">Percentage: 81%</p>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">SSLC</div>
+                    <h3>10th Standard</h3>
+                    <p class="edu-degree">SSLC</p>
+                    <p class="edu-score">Percentage: 86%</p>
                 </div>
             </div>
         </div>
@@ -447,6 +512,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer id="footer">
         <div class="container">
@@ -459,6 +526,8 @@
             </div>
         </div>
     </footer>
+
+    <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
 
     <script src="script.js"></script>
 </body>
